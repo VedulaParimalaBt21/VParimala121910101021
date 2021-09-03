@@ -38,3 +38,17 @@ B =set(np.arange(0,9,3))
 print(B)
 P=A.union(B)
 print(P)
+#DeMorgan's law
+import numpy as np
+U=set(np.arange(10))
+A=set(np.arange(0,9,2))
+B=set(np.arange(0,9,3))
+P= A.union(B)
+Q=uni.difference(P)
+S=uni.difference(B)
+R=uni.difference(A)
+T=R.intersection(S)
+if Q==T :
+  print("True")
+else:
+  print("false")
