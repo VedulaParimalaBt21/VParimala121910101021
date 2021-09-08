@@ -52,3 +52,38 @@ if Q==T :
   print("True")
 else:
   print("false")
+
+
+8th SEPTEMBER 2021 
+def card_probability(f,s):
+  prob = f/s
+  return prob
+f=int(input("total no of red hearts: "))
+s=int(input("total outcomes: "))
+print(round(card_probability(f,s),2))
+
+
+def card_probability(f,s):
+  
+  prob = f/s
+  return prob
+f=int(input("total no of face cards: "))
+s=int(input("total outcomes: "))
+print(round(card_probability(f,s),2))
+
+def card_probability(f,s):
+  
+  prob = f/s
+  return prob
+f=int(input("total no of queenofhearts cards: "))
+s=int(input("total outcomes: "))
+print(round(card_probability(f,s),2))
+
+def dice(a,b):
+  prob=len(a)+len(b)-len(a.intersection(b))
+  s={1,2,3,4,5,6}
+  c=prob/len(s)
+  return c
+a={1,3,5}
+b={1,2,3}
+print(round(dice(a,b),2))
