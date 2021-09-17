@@ -87,3 +87,23 @@ def dice(a,b):
 a={1,3,5}
 b={1,2,3}
 print(round(dice(a,b),2))
+
+
+
+import math
+a=int(input("enter the number of right handed screws:- "))
+b=int(input("enter the number of left handed screw:- "))
+c=int(input("number of screws to be selected:- "))
+d=input("enter with replacement or without replacement:- ")
+T= a+b
+if d== "without replacement":
+  C1=math.factorial(b)/(math.factorial(b-c)*math.factorial(c))
+  C2=math.factorial(T)/(math.factorial(T-c)*math.factorial(c))
+  C= 1-(C1/C2)
+  prob= print("prob of atleast one :- ", C)
+else:
+  prob1=(b)/T
+  prob2=(b)/T
+  P=1-(prob1*prob2)
+  print("the prob with replacement is:- ",P)
+
